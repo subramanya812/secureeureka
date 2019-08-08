@@ -1,0 +1,20 @@
+#configure this discovery Server
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+#HTTP port
+server:
+  port: 1111
+
+  ssl:
+    enabled: true
+    key-store: classpath:exportwall-keystore.jks
+    key-store-password: myPassPhrase
+    key-alias: expertwall
+    key-store-provider: SUN
+    key-store-type: JKS
+    key-password: sunil45143
